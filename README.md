@@ -76,7 +76,7 @@ than using an initial_investment of $10,000 we ploted our cumalitive_profits but
 This showed us what our ROI wouldve been if we had invested $10,000 in our ETF from the beginning of our data set. 
 
 
-### MonteCarlo
+## MonteCarlo
 
 Using the *MCSimulation* functuion we passed in our ETF and weights, we ran 500 simulatiuons for 3 years.
 
@@ -87,4 +87,22 @@ Generated a chart of the mean, median, min, and max totals which we than plotted
 Calculated our simulated returns by multipling our initial investment by simulated returns
 
 using the upper and lower confidence intervals found that a $10,000 invesment will be worth anywhere between $21577.29 and $83136.68 after three years. 
+
+## UI 
+
+Utilized interact to create a dashboard for the user to swap out stocks in our portfolio
+
+create a function to define the stock we want removed from the ARK dataframe and one we want added from the competitors list
+
+we keep the weights of stock they are removing in replace for the stock they are swapping in by setting the swap_weights equal to the original from the ARK_weight
+
+than we replot the baseline results using the new portfolio. 
+
+add the swaps to the dataframes. 
+
+Same steps are duplicated for the monte carlo - 
+
+This allows our users to visualize which stocks will perform best
+
+
 
